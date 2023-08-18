@@ -1,0 +1,123 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    height: 100svh;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (min-width: 1080px)
+{
+    .nav-container
+    {
+        float: right;
+    }
+    .nav-container ul
+    {
+        list-style: none;
+    }
+    .nav-container li
+    {
+        font-size: 1.1em;
+        display: inline-block;
+        padding: 2.3em 2em 0em 1em;
+    }
+    .nav-container a
+    {
+        opacity: 60%;
+    }
+    .nav-container a:hover
+    {
+        opacity: 100%;
+    }
+    
+}
+
+header
+{
+    color: white;
+    text-transform: uppercase;
+}
+header::after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+.nav-logo 
+{
+    padding: 0em 2em;
+    float: left;
+    font-size: 2em;
+}
+
+footer
+{
+    position: absolute;
+    display: grid;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: white;
+}
+
+.social-media-footer
+{
+    background-color: #333;
+    grid-column: 1/3;
+    text-align: center;
+    padding: 0.6em;
+}
+.social-media-footer a
+{
+    padding: 0em 0.5em;
+}
+.copyright-footer
+{
+    grid-column: 1/3 ;
+    background-color: black;
+    padding-right: 2em;
+    text-align: right;
+}
+
+
+.contact-us
+{
+    display: flex;
+    flex-wrap: wrap;
+    height: 90%;
+    background-image: url(../img/co.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+.contact-us .container
+{
+    background-color: aqua;
+    padding: 1em 2em;
+    align-self: center;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-emphasis: bold;
+    color: white;
+    position: absolute;
+}
+
+.contact-us .call-us
+{
+    background-color: teal;
+    align-self: right;
+}
+
